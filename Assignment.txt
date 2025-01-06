@@ -1,0 +1,154 @@
+Give me some idea on what is a Datatype in JavaScript ? What are Primitive Data types and non-primitive data types ? Explain with some examples.
+
+
+A:- Data type in JavaScript.
+
+A data type in JavaScript represents the kind of data that can be stored and manipulated in a program. JavaScript is a dynamically typed language, meaning variables can hold different data types at different times during execution.
+
+Data types in JavaScript are categorized into two main types:
+1. Primitive Data Types
+2. Non-Primitive (Reference) Data Types
+
+---
+
+1. Primitive Data Types
+
+Primitive data types are immutable, meaning their value cannot be changed after being assigned (though the variable can be reassigned). They are stored directly in the stack.
+
+Types of Primitive Data Types:
+1. String
+   Represents textual data.  
+   Example:
+   
+   let name = "Alice";
+   console.log(name); // Output: Alice
+ 
+
+2. Number
+   Represents both integer and floating-point numbers.  
+   Example:
+   
+   let age = 25;
+   let temperature = 98.6;
+   console.log(age, temperature); // Output: 25 98.6
+ 
+
+3. Boolean
+   Represents true or false values.  
+   Example:
+   
+   let Active = true;
+   console.log(Active); // Output: true
+ 
+
+4. Undefined
+   Represents a variable that has been declared but not assigned a value.  
+   Example:
+   
+   let x;
+   console.log(x); // Output: undefined
+ 
+
+5. Null
+   Represents an intentional absence of value.  
+   Example:
+   
+   let y = null;
+   console.log(y); // Output: null
+ 
+
+6. Symbol (introduced in ES6)
+   Represents a unique identifier.  
+   Example:
+   
+   let sym1 = Symbol("unique");
+   let sym2 = Symbol("unique");
+   console.log(sym1 === sym2); // Output: false
+ 
+
+7. BigInt (introduced in ES11)
+   Represents integers larger than `Number.MAX_SAFE_INTEGER`.  
+   Example:
+   
+   let bigNum = 123456789012345678901234567890n;
+   console.log(bigNum); // Output: 123456789012345678901234567890n
+ 
+   -2^53-1 to +2^53-1  bigInt range
+---
+
+2. Non-Primitive (Reference) Data Types
+
+Non-primitive data types are mutable and are stored in the heap memory. The variable holds a reference to the memory location, not the actual data.
+
+Types of Non-Primitive Data Types:
+1. Object
+   A collection of key-value pairs.  
+   Example:
+   
+   let person = {
+       name: "Bob",
+       age: 30,
+   };
+   console.log(person.name); // Output: Bob
+ 
+
+2. Array
+   Represents an ordered list of values.  
+   Example:
+   
+   let numbers = [1, 2, 3, 4, 5];
+   console.log(numbers[2]); // Output: 3
+ 
+
+3. Function
+   Represents a block of code that can be executed.  
+   Example:
+   
+   function greet() {
+       console.log("Hello!");
+   }
+   greet(); // Output: Hello!
+ 
+
+4. Date, Map, Set,
+   Built-in objects in JavaScript for specific purposes.  
+   Example:
+   
+   let date = new Date();
+   console.log(date); // Output: Current date and time
+ 
+
+---
+
+Comparison of Primitive and Non-Primitive Data Types
+
+Primitive:
+   Stored in Stack
+   immutable
+   directly holds the value
+   let x = 10;
+
+Non Primitive:
+   Stored in Heap
+   Mutable data types
+   Holds the reference to the value
+   let obj = { a: 1 };
+   
+
+Example Illustrations
+
+Primitive Example:
+
+let a = 10;
+let b = a;
+b = 20;
+console.log(a); // Output: 10 (value is copied, not affected by changes to `b`)
+
+
+Non-Primitive Example:
+
+let obj1 = { name: "Alice" };
+let obj2 = obj1;
+obj2.name = "Bob";
+console.log(obj1.name); // Output: Bob (both refer to the same object in memory)
+
