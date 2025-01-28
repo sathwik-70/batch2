@@ -1,0 +1,63 @@
+!Doctype is used for Document types declaration state
+
+head is an invisible to the end user
+
+js is linked using the script tag
+
+The variables inside a function are refered as local variables
+
+What is datatypes?
+- datatypes is used to define what kind of data used in the variable.
+
+types of datatypes:-
+1. primitive data types
+-  it can store single values
+-  immutable
+- primitive data types are :- 
+    1.String
+    2.Boolean
+    3.number
+    4.Undefined
+    5.null
+    6.bigInt
+    7.Symbol
+2. non-primitive datatypes
+- it can store multiple values.
+- mutable
+- non-primitive datatypes :
+    1.class
+    2.objects
+    3.functions
+    4.arrays
+    5. math, date, json
+
+
+1. String :- sequence of characters stored within double quotes / single quotes/ backticks(templateliterals ``)
+ex: var username = "Mahesh Babu";
+    let title = 'super start';
+    char networth = `120cr`;
+
+    typeof(); method used to define the type of data
+
+2. Boolean :- true / false.
+    Re-declaration is not allowed.
+
+3. number:- integers, float, decimal, exponential etx...
+-2^53-1 to +2^53-1  bigInt range
+ ex: let num = 10;
+  let num2 = 12.233;
+  let num3 = 10e4;
+
+4. undefined:- variable is declared but value is  not defining/initialised.
+     let a; 
+    console.log(a);
+
+5. null :- null is a abscence of object / empty space 
+     but the datatype of null is still an object (bug)
+    
+    what is the return type of null ?  A: object
+
+
+comment in js: -
+1. single line comment (//)
+2. multi line comment : (/**/)
