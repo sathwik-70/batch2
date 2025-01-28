@@ -265,6 +265,7 @@ DOM Methods:-
 
 - below methods used to select html elements based on "css selectors".
 5.document.querySelector("#id"):- this method is used to select only one element.
+<<<<<<< HEAD
 6.document.querySelectorAll(".class"):- this method is used to select multiple elements.
 
 
@@ -288,3 +289,6 @@ Dynamic creation of html element in js:-
 - to set the attributes we can use a method called as "setAttribute()".
 
 - to remove attribute we have  method "removeAttribute()"
+=======
+6.document.querySelectorAll(".class"):- this method is used to select multiple elements.
+>>>>>>> d07754e72436a9b3959067961d689760df9695ce

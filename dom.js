@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // let element = document.getElementById("demo");
 // // element.innerText = "DOM"
 // element.innerHTML = "DOM"
@@ -90,3 +91,7 @@ let bgColor = document.querySelectorAll(".bgColor");
         element.style.backgroundColor = "transparent";
     })
 })
+=======
+let element = document.getElementById("demo");
+console.log(element);
+>>>>>>> d07754e72436a9b3959067961d689760df9695ce
